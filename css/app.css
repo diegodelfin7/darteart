@@ -1,0 +1,16 @@
+/* index */
+.navbar{
+	background-color: #ffffff !important;
+	border-color: #000000 !important;
+}
+.navbar-brand{
+	padding: 0px;
+	margin: 15px !important;
+}
+.forget_pass{
+	display: block;
+	margin-top: 10px;
+}
+#navbar .form-group input[type="password"]{
+	margin-top: 30px;
+}
