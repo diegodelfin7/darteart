@@ -1,6 +1,7 @@
 /* index */
 .navbar{
 	background-color: #ffffff !important;
+	margin-bottom:0px !important;
 }
 .navbar-brand{
 	padding: 0px;
@@ -16,8 +17,31 @@
 #navbar .form-group input[type="password"]{
 	margin-top: 30px;
 }
+#navbar li:hover{
+	background-color: #f0aa46;
+}
+#navbar li a:hover{
+	color: #ffffff;
+}
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
 	background-color: transparent !important;
+}
+.inner-nav{
+	padding: 10px;
+}
+.landing{
+	background-color: #f0aa46;
+	color:#ffffff;
+	padding: 20px 0px;
+}
+.show-grid{
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+.footer{
+	border-top: 1px solid #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 @media (max-width:767px) {
 	.logo{
