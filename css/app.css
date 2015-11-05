@@ -19,7 +19,7 @@
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
 	background-color: transparent !important;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
 	.logo{
 		width: 150px;
 	}
