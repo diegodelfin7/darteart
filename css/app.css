@@ -1,11 +1,13 @@
 /* index */
 .navbar{
 	background-color: #ffffff !important;
-	border-color: #000000 !important;
 }
 .navbar-brand{
 	padding: 0px;
 	margin: 15px !important;
+}
+.navbar-form{
+	border:0px !important;
 }
 .forget_pass{
 	display: block;
@@ -13,4 +15,15 @@
 }
 #navbar .form-group input[type="password"]{
 	margin-top: 30px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: transparent !important;
+}
+@media (max-width:768px) {
+	.logo{
+		width: 150px;
+	}
+	.navbar-brand{
+		margin: 0px !important;
+	}
 }
