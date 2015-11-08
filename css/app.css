@@ -30,9 +30,18 @@
 	padding: 10px;
 }
 .landing{
-	background-color: #f0aa46;
+	background-image: url(../img/arte.jpg) ;
+	background-position: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	color:#ffffff;
+	text-align: center;
+	min-height:400px;
 	padding: 20px 0px;
+	vertical-align: middle;
+}
+.landing_slogan{
+	font-size: 26px;
 }
 .show-grid{
 	margin-top: 15px;
@@ -46,15 +55,57 @@
 	padding: 10px;
 }
 .footer{
-	border-top: 1px solid #000000;
+	border-top: 1px solid #eee;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+ul.social-buttons {
+    margin-bottom: 0;
+}
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(52, 53, 54, 0.49);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+ul.social-buttons li a:hover{
+    background-color: #ed9c22;
+}
+footer span.copyright {
+    line-height: 40px;
+}
+.register_content{
+	margin-top: 30px;
+}
+.l-box-content,.l-box-register{
+	margin:0 auto;
+	max-width: 26.875em;
+}
+.hr-logo{
+	margin:0px;
+}
+
+@media (max-width: 771px) and (min-width: 768px){
+	.logo{
+		width: 245px;
+	}
+}
 @media (max-width:767px) {
 	.logo{
-		width: 150px;
+		width: 152px;
 	}
 	.navbar-brand{
 		margin: 0px !important;
 	}
 }
+
+
