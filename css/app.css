@@ -56,6 +56,7 @@
 }
 .footer{
 	border-top: 1px solid #eee;
+	margin-top: 30px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -83,10 +84,10 @@ ul.social-buttons li a:hover{
 footer span.copyright {
     line-height: 40px;
 }
-.register_content{
+.register_content,.admin_content{
 	margin-top: 30px;
 }
-.l-box-content,.l-box-register{
+.l-box-content,.l-box-register,.l-box-adminlogin{
 	margin:0 auto;
 	max-width: 26.875em;
 }
