@@ -10,23 +10,25 @@
 	<title>DarteArt | Registro </title>
 	<link href="css/bootstrap.css" rel="stylesheet" />
 	<link href="css/font-awesome.min.css" rel="stylesheet" />
-  	<link href="css/zocial.css" rel="stylesheet" />
-	<link href="css/app.css" rel="stylesheet" />
+	<link href="css/register.css" rel="stylesheet" />
+	<link href="css/footer.css" rel="stylesheet" />
 </head>
 <body>
-	<header>
+
+	<header class="registro_header">
 		<div class="container">
-			<div class="l-box-content">
-				<a href="index.html">
+			<div class="registro_header_logo">
+				<a href="http://localhost/darte-art">
 					<img src="img/logodarteart.png" alt="" width="100%">
 				</a>
 			</div>
 		</div>
 		<hr class="hr-logo" />
 	</header>
-	<section class="register_content">
+
+	<section class="registro_content">
 		<div class="container">
-			<div class="l-box-register">
+			<div class="registro_content_form">
 				<form action="#" method="POST">
 					<div class="form-group">
 					    <label for="exampleInputNombres">Nombres</label>
@@ -60,33 +62,5 @@
 			</div>
 		</div>
 	</section>
-	<footer class="footer">
-    	<div class="container-fluid">
-        	<div class="col-md-4"><span class="copyright">Copyright &copy; dartearte 2015</span></div>
-        	<div class="col-md-4 col-md-offset-4">
-          		<div class="pull-right">
-            		<ul class="list-inline social-buttons">
-		              <li>
-		                <a href="#">
-		                  <i class="fa fa-twitter"></i>
-		                </a>
-		              </li>
-		              <li>
-		                <a href="#">
-		                  <i class="fa fa-facebook"></i>
-		                </a>
-		              </li>
-		              <li>
-		                <a href="#">
-		                  <i class="fa fa-google-plus"></i>
-		                </a>
-		              </li>
-            		</ul>
-          		</div>
-        	</div>      
-    	</div>
-  	</footer>
-	<script src="js/jquery-2.1.4.js"></script>
-	<script src="js/bootstrap.js"></script>
-</body>
-</html>
+
+	<?php include('includes/footer.php'); ?>

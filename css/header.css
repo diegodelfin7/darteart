@@ -1,0 +1,45 @@
+.navbar{
+	background-color: #ffffff !important;
+	margin-bottom:0px !important;
+}
+.navbar-brand{
+	padding: 0px;
+	margin: 15px !important;
+}
+.navbar-form{
+	border:0px !important;
+}
+.forget_pass{
+	display: block;
+	margin-top: 10px;
+}
+#navbar .form-group input[type="password"]{
+	margin-top: 30px;
+}
+#navbar li:hover{
+	background-color: #f0aa46;
+}
+#navbar li a:hover{
+	color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: transparent !important;
+}
+.inner-nav{
+	padding: 10px;
+}
+
+@media (max-width: 771px) and (min-width: 768px){
+	.logo{
+		width: 245px;
+	}
+}
+@media (max-width:767px) {
+	.logo{
+		width: 152px;
+	}
+	.navbar-brand{
+		margin: 0px !important;
+	}
+}
+

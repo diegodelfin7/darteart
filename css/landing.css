@@ -1,0 +1,32 @@
+.landing{
+	background-image: url(../img/arte.jpg) ;
+	background-position: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color:#ffffff;
+	text-align: center;
+	min-height:400px;
+	padding: 20px 0px;
+	vertical-align: middle;
+}
+.landing_slogan{
+	font-size: 26px;
+}
+
+@media (max-width:767px) {
+	.landing_slogan{
+		font-size: 22px;
+	}
+	.title_app{
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 240px) and (max-width: 320px){
+	.landing_slogan{
+		font-size: 16px;
+	}
+	.title_app{
+		font-size: 18px;
+	}
+}

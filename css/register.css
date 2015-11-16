@@ -1,0 +1,10 @@
+.registro_content{
+	margin-top: 30px;
+}
+.registro_header_logo,.registro_content_form{
+	margin:0 auto;
+	max-width: 26.875em;
+}
+.hr-logo{
+	margin:0px;
+}

@@ -14,7 +14,7 @@
 	display: block;
 	margin-top: 10px;
 }
-#navbar .form-group input[type="password"]{
+#navbar .form-group input[type="password"],#navbar .user_admin{
 	margin-top: 30px;
 }
 #navbar li:hover{
@@ -73,13 +73,27 @@ ul.social-buttons li a {
     outline: 0;
     color: #fff;
     text-align: center;
-    background-color: rgba(52, 53, 54, 0.49);
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
 }
-ul.social-buttons li a:hover{
-    background-color: #ed9c22;
+ul.social-buttons li a.ggoogle{
+	background-color: #d34836;
+}
+ul.social-buttons li a.ggoogle:hover{
+	background-color: #ed9c22;
+}
+ul.social-buttons li a.ifacebook{
+	background-color: #3b5998;
+}
+ul.social-buttons li a.ifacebook:hover{
+	background-color: #ed9c22;
+}
+ul.social-buttons li a.itwitter{
+	background-color: #1dcaff;
+}
+ul.social-buttons li a.itwitter:hover{
+	background-color: #ed9c22;
 }
 footer span.copyright {
     line-height: 40px;
@@ -95,6 +109,38 @@ footer span.copyright {
 	margin:0px;
 }
 
+#solicitudes{
+	margin-top: 40px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
 @media (max-width: 771px) and (min-width: 768px){
 	.logo{
 		width: 245px;
@@ -106,6 +152,12 @@ footer span.copyright {
 	}
 	.navbar-brand{
 		margin: 0px !important;
+	}
+	.no-rightmobile{
+		float: left !important;
+	}
+	#navbar .user_admin{
+		margin-top: 0px;
 	}
 }
 

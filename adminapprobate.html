@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +7,64 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>DarteArt Administrador | Registro </title>
+    <title>DarteArt Administrador | Aprobar </title>
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
 </head>
 <body>
     <nav class="navbar navbar-default navbar-static-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="img/logodarteart.png" alt="" width="250" class="logo">
-                </a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-                <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
-                    <li><a href="">Escultura</a></li>
-                    <li><a href="">Dibujo</a></li>
-                    <li><a href="">Collage</a></li>
-                    <li><a href="">Pintura</a></li>
-                    <li><a href="">Grabado</a></li>
-                    <li><a href="">Urbano</a></li>
-                </ul>
-                <form class="navbar-form navbar-right">
-                    <h4 class="hidden-sm hidden-md hidden-lg">Iniciar Sesión</h4>
-                    <div class="form-group">
-                        <input type="text" placeholder="Correo Electrónico" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" placeholder="Contraseña" class="form-control">
-                  <span class="forget_pass">
-                    <a href="#">Olvidaste tu contraseña</a>
-                  </span>
-                    </div>
-                    <button type="submit" class="btn btn-success">Entrar</button>
-                </form>
-            </div><!--/.navbar-collapse -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://localhost/darte-art/index.html">
+            <img src="img/logodarteart.png" alt="" width="250" class="logo">
+          </a>
         </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+          <div class="navbar-form navbar-right">
+            <ul class="nav navbar-nav">
+                 <li class="dropdown user_admin">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span> 
+                        <strong>Admin</strong>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                           <a href="#">
+                           Cerrar Sesión
+                           </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+        </div><!--/.navbar-collapse -->
+      </div>
     </nav>
-
-<script src="js/jquery-2.1.4.js"></script>
+    <section class="container">
+        <h3>Solicitudes en espera</h3>
+        <div id="solicitudes">
+            <div class="row show-grid">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <img src="img/obra123.jpg" width="100%">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8">
+                    <h4>Titulo</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                    <h4>Precio:</h4>
+                    <button class="btn btn-success">Aprobar</button>
+                    <button class="btn btn-danger">Desaprobar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-2.1.4.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
 </html>
