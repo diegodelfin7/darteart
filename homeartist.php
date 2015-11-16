@@ -65,28 +65,112 @@
     <section class="">
         <div class="container">
             <h3>Mensajes</h3>
-            <div class="">
-                <?php for ($i=0; $i < 7; $i++) { ?> 
-                    <div class="row">
-                        <div class="col-md-3">
-                            <ul>
-                                <li><a href="">Usuario <?php echo $i+1; ?></a></li>
-                            </ul>
+            <div class="row">
+                <div class="col-md-3">
+                    <?php for ($i=0; $i < 7; $i++) { ?>
+                        <div class="item_chat"> 
+                            <div class="conversation-wrap">
+                                <div class="media conversation">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 50px; height: 50px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="media-heading">Naimish Sakhpara</h5>
+                                        <small>Hello</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-9 hidden">
+                    <?php } ?>
+                        <div class="message-wrap col-lg-8 hidden">
+                            <div class="msg-wrap">
+                                <div class="media msg ">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 32px; height: 32px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC">
+                                    </a>
+                                    <div class="media-body">
+                                        <small class="pull-right time"><i class="fa fa-clock-o"></i> 12:10am</small>
+                                        <h5 class="media-heading">Naimish Sakhpara</h5>
+                                        <small class="col-lg-10">Location H-2, Ayojan Nagar, Near Gate-3, Near
+                                            Shreyas Crossing Dharnidhar Derasar,
+                                            Paldi, Ahmedabad 380007, Ahmedabad,
+                                            India
+                                            Phone 091 37 669307
+                                            Email aapamdavad.district@gmail.com</small>
+                                    </div>
+                                </div>
+                                <div class="alert alert-info msg-date">
+                                    <strong>Today</strong>
+                                </div>
 
-                            <button class="btn btn-primary">Responder</button>
+                            </div>
+
+                            <div class="send-wrap ">
+
+                                <textarea class="form-control send-message" rows="3" placeholder="Write a reply..."></textarea>
+
+
+                            </div>
+
+                            <div class="btn-panel">
+                                <a href="" class=" col-lg-3 btn   send-message-btn " role="button"><i class="fa fa-cloud-upload"></i> Add Files</a>
+                                <a href="" class=" col-lg-4 text-right btn   send-message-btn pull-right" role="button"><i class="fa fa-plus"></i> Send Message</a>
+                            </div>
                         </div>
+                </div>
+                <div class="message-wrap col-md-9 hidden">
+                    <div class="msg-wrap">
+                        <div class="media msg ">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 32px; height: 32px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC">
+                            </a>
+                            <div class="media-body">
+                                <small class="pull-right time"><i class="fa fa-clock-o"></i> 12:10am</small>
+                                <h5 class="media-heading">Naimish Sakhpara</h5>
+                                <small class="col-lg-10">Location H-2, Ayojan Nagar, Near Gate-3, Near
+                                    Shreyas Crossing Dharnidhar Derasar,
+                                    Paldi, Ahmedabad 380007, Ahmedabad,
+                                    India
+                                    Phone 091 37 669307
+                                    Email aapamdavad.district@gmail.com</small>
+                            </div>
+                        </div>
+                        <div class="alert alert-info msg-date">
+                            <strong>Today</strong>
+                        </div>
+
                     </div>
-                <?php } ?>
+
+                    <div class="send-wrap ">
+
+                        <textarea class="form-control send-message" rows="3" placeholder="Write a reply..."></textarea>
+
+
+                    </div>
+
+                    <div class="btn-panel">
+                        <a href="" class=" col-lg-3 btn   send-message-btn " role="button"><i class="fa fa-cloud-upload"></i> Add Files</a>
+                        <a href="" class=" col-lg-4 text-right btn   send-message-btn pull-right" role="button"><i class="fa fa-plus"></i> Send Message</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <div  class="container">
+    <div class="row hidden">
+         <div class="col-md-3">
+            <ul>
+                <li><a href="">Usuario <?php echo "7"; ?></a></li>
+            </ul>
+        </div>
+        <div class="col-md-9 hidden">
+            <button class="btn btn-primary">Responder</button>
+        </div>
+    </div>
+    <div  class="container hidden">
         <div class="row">
             <div class="conversation-wrap col-lg-3">
                 <div class="media conversation">
-                    <a class="pull-left" href="#">
+                    <a class="pull-left">
                         <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 50px; height: 50px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC">
                     </a>
                     <div class="media-body">
@@ -95,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            <div class="message-wrap col-lg-8">
+            <div class="message-wrap col-lg-8 hidden">
                 <div class="msg-wrap">
                     <div class="media msg ">
                         <a class="pull-left" href="#">
@@ -135,7 +219,7 @@
     <style type="text/css" media="screen">
             .conversation-wrap
     {
-        box-shadow: -2px 0 3px #ddd;
+        /*box-shadow: -2px 0 3px #ddd;*/
         padding:0;
         max-height: 400px;
         overflow: auto;
@@ -143,7 +227,8 @@
     .conversation
     {
         padding:5px;
-        border-bottom:1px solid #ddd;
+       /* border-bottom:1px solid #ddd;*/
+        border:1px solid #ddd;
         margin:0;
 
     }
@@ -250,4 +335,10 @@
         border-bottom: 1px solid #ddd;
     }
     </style>
-	<?php include('includes/footer.php'); ?>
+    <?php include('includes/footer.php'); ?>
+    <script async defer>
+        $(".item_chat").on("click",function(response){
+            console.log(response);
+            $(".message-wrap").toggleClass('hidden');
+        });
+    </script>

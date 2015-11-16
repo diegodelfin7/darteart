@@ -14,3 +14,17 @@
         padding: 15px 0;
     }
 }
+
+
+/* chat */
+
+
+.item_chat{
+	cursor: pointer;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.item_chat:hover{
+	background-color: #eee;
+}
